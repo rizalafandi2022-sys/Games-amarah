@@ -1,6 +1,9 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { RageAnalysisResult } from "../types";
 
+// Type declaration fallback if vite-env.d.ts is not picked up immediately by some IDEs
+declare const process: { env: { API_KEY: string } };
+
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const analyzeRage = async (userInput: string): Promise<RageAnalysisResult> => {
