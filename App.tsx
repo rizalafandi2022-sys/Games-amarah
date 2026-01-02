@@ -73,7 +73,7 @@ const App: React.FC = () => {
           <span className="text-sm font-bold text-gray-500 dark:text-gray-400 tracking-widest uppercase">AI Comedy Generator</span>
         </div>
         <h1 className="text-4xl md:text-5xl font-display font-black text-center text-dark dark:text-white leading-tight">
-          Bank Emosi <span className="text-primary">Cuan</span>
+          Ubah Amarah <span className="text-primary">Jadi Saldo</span>
         </h1>
         <p className="mt-2 text-center text-gray-600 dark:text-gray-400 max-w-md">
           Ubah amarahmu menjadi aset (khayalan) masa depan!
@@ -111,7 +111,7 @@ const App: React.FC = () => {
 
       {/* Footer */}
       <footer className="w-full p-6 text-center text-gray-400 dark:text-gray-500 text-sm z-10">
-        <p>© {new Date().getFullYear()} Bank Emosi Cuan. <br/>Hanya hiburan, bukan saran finansial sungguhan.</p>
+        <p>© {new Date().getFullYear()} Ubah Amarah Jadi Saldo. <br/>Dibuat oleh Rizal Afandi tampan.</p>
       </footer>
     </div>
   );
