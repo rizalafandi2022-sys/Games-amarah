@@ -11,7 +11,8 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     define: {
       // Polyfill process.env.API_KEY agar bisa dibaca di client-side
-      'process.env.API_KEY': JSON.stringify(env.API_KEY)
+      // Prioritas: .env file (env.API_KEY) -> Vercel System Env (process.env.API_KEY)
+      'process.env.API_KEY': JSON.stringify(env.API_KEY || process.env.API_KEY)
     }
   };
 });
